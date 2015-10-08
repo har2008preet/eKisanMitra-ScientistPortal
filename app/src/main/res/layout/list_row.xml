@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+ 
+    
+ 
+    <!-- Question -->
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" 
+        android:text="Sample Question"/>
+ 
+    
+     <!-- Date -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/question"
+        android:text="29-06-2015"
+        android:textSize="@dimen/rating" />
+    
+    
+	<!-- Number -->
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/date"
+        android:text="7777777777"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+ 
+</RelativeLayout>

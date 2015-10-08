@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="wolverine.example.com.btp_scientist" >
+
+    <!-- GCM connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="wolverine.example.com.btp_scientist.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="wolverine.example.com.btp_scientist.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/main"
+        android:label="Scientist Portal"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Sign in"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Register2ndStep"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_register2nd_step"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FinalScreen"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_final_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".answer_query"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_answer_query"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="wolverine.example.com.btp_scientist" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".GCMMessageHandler"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Answered_questions"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_answered_questions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Your_Answered_queries"
+            android:label="@string/title_activity_your__answered_queries" >
+        </activity>
+        <activity
+            android:name=".new_answer_from_your_answer"
+            android:label="@string/title_activity_new_answer_from_your_answer" >
+        </activity>
+        <activity
+            android:name=".Edit_Answer_from_your_ans"
+            android:label="@string/title_activity_edit__answer_from_your_ans" >
+        </activity>
+    </application>
+
+</manifest>

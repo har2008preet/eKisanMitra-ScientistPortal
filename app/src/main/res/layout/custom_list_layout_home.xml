@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:state_window_focused="false"
+    android:background="#FF0099CC">
+
+    <LinearLayout
+        android:id="@+id/layout_item_car"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:descendantFocusability="blocksDescendants">
+        <TextView
+            android:id="@+id/txt_questions"
+            android:text="Sample Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:id="@+id/layout_car_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_questions"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/lbl_asked_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asked By-"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_asked_by"
+                android:text="9999999999"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="80dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:text="29-6-2015"/>
+           </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

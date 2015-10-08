@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Scientist Portal</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scientist_loggedin">ScientistLoggedin</string>
+
+    <string name="title_section1">Home </string>
+    <string name="title_section2">Live Chat</string>
+    <string name="title_section3">More</string>
+    <string name="title_activity_registration">Registration</string>
+    <string-array name="organizations">
+        <item>Choose from here</item>
+        <item>Government</item>
+        <item>specialized Agency</item>
+        <item>Private</item>
+        <item>other</item>
+        <!--<item>Agriculture Extension</item>
+        <item>Sericulture</item>
+        <item>Apiculture</item>
+        <item>Biotechnology</item>
+        <item>Crop physiology</item>
+        <item>Horticulture</item>-->
+    </string-array>
+    <string-array name="rField">
+        <item>Choose from here</item>
+        <item>Breed</item>
+        <item>Soil</item>
+        <item>Harvest</item>
+        <item>Crop</item>
+        <item>Machinery</item>
+        <item>Pesticide</item>
+        <item>Cultivation</item>
+        <item>Irrigation</item>
+        <item>Compost</item>
+        <item>Climate</item>
+        <item>Food</item>
+        <item>Agri</item>
+        <item>Rain</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="rFieldQ">
+        <item>ALL</item>
+        <item>Breed</item>
+        <item>Soil</item>
+        <item>Harvest</item>
+        <item>Crop</item>
+        <item>Machinery</item>
+        <item>Pesticide</item>
+        <item>Cultivation</item>
+        <item>Irrigation</item>
+        <item>Compost</item>
+        <item>Climate</item>
+        <item>Food</item>
+        <item>Agri</item>
+        <item>Rain</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Mr</item>
+        <item>Miss</item>
+        <item>Mrs</item>
+    </string-array>
+    <string name="title_activity_register2nd_step">Register2ndStep</string>
+    <string name="title_activity_final_screen">FinalScreen</string>
+    <string name="title_activity_delete_vaste">DeleteVaste</string>
+    <string name="title_activity_answer_query">answer_query</string>
+
+    <string name="title_activity_answered_queries">Answered_queries</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_answered_questions">Answered_questions</string>
+    <string name="title_activity_your__answered_queries">Your_Answered_queries</string>
+    <string name="title_activity_new_answer_from_your_answer">new_answer_from_your_answer</string>
+    <string name="title_activity_edit__answer_from_your_ans">Edit_Answer_from_your_ans</string>
+</resources>

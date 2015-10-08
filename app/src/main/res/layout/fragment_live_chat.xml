@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner
+        android:id="@+id/tag"
+        android:layout_width="fill_parent"
+        android:entries="@array/rFieldQ"
+        android:layout_height="wrap_content"></Spinner>
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ListView
+            android:id="@+id/list_ques"
+            android:layout_width="fill_parent"
+            android:divider="@color/list_divider"
+            android:dividerHeight="5dp"
+            android:layout_height="wrap_content"
+            android:listSelector="@drawable/list_row_selector"></ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
